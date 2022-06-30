@@ -1,0 +1,59 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+
+<head>
+  <title>Sample Form, Please Ignore</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Test Survey Please Ignore</h1>
+  <p id="description">Post recruitment satisfaction survey</p>
+  <form action="" id="survey-form">
+    <fieldset id="general-info">
+      <label id="name-label">Character name: <input type="text" id="name" placeholder="Some Guy" required></label>
+      <label id="email-label">Email address: <input type="email" id="email" placeholder="Some-email@something.wut"
+          required> </label>
+      <label id="number-label">Character age (years): <input type="number" id="number" required min="0" max="19"
+          placeholder="0-19 years"></label>
+    </fieldset>
+    <fieldset id="bio">
+      <label>Tell us why you joined: <textarea rows="10" cols="70" placeholder="I just want to pew pew..."
+          required></textarea></label>
+    </fieldset>
+    <fieldset>
+      <label id="reference-source"> How did you hear about us?
+        <select id="dropdown" required>
+          <option value="0">(select one)</option>
+          <option value="1">Social Media</option>
+          <option value="2">YouTube</option>
+          <option value="3">Direct recruitment</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+      <label id="rating-scale">On a scale of 1-5, how would you rate your experience?
+        <label><input class="inline" type="radio" name="recruitment-experience" value="1" checked> 1-No... Just
+          No...</label>
+        <label><input class="inline" type="radio" name="recruitment-experience" value="2"> 2</label>
+        <label><input class="inline" type="radio" name="recruitment-experience" value="3"> 3</label>
+        <label><input class="inline" type="radio" name="recruitment-experience" value="4"> 4</label>
+        <label><input class="inline" type="radio" name="recruitment-experience" value="5"> 5 - Best I've ever
+          had</label>
+      </label>
+      <label id="terms"><input class="inline" type="checkbox" name="terms-acceptance" required> I agree to the <a
+          href="" target="_blank">Terms and Conditions</a></label>
+      <label id="site-check"><input class="inline" type="checkbox" name="site-sign-up" required> I confirm that I have
+        signed up to the <a href="" target="_blank">website</a></label>
+    </fieldset>
+    <fieldset>
+      <label id="optional-comments">Please leave any additional comments here:
+        <textarea rows="10" cols="70"></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" action="Submit">
+  </form>
+</body>
+
+</html>
